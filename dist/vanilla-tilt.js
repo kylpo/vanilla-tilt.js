@@ -154,7 +154,7 @@ class VanillaTilt {
 
     if (this.glare) {
       this.glareElement.style.transform = `rotate(${values.angle}deg) translate(-50%, -50%)`;
-      this.glareElement.style.opacity = `${values.percentageY * this.settings["max-glare"] / 100}`;
+      this.glareElement.style.opacity = `${this.settings["max-glare"]}`;
     }
 
     this.element.dispatchEvent(new CustomEvent("tiltChange", {
